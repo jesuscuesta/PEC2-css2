@@ -1,33 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <include src="./views/header.html"></include>
-    <body onload="mueveReloj()">
-        <header class="header">
-            <h1>Iglesia de San Martín de Tours</h1>
-            <img
-                class="header__image"
-                src="./assets/images/iglesia-externo.jpg"
-                alt="Iglesia de San Martín de Tours"
-                title="Iglesia de San Martín de Tours"
-            />
-        </header>
-        <include src="./views/main.html"></include>
-        <include src="./views/footer.html"></include>
+    <include src="./shared/head.html"></include>
+    <body>
+        <div class="bg-light">
+            <include src="./nav.html"></include>
+            <include src="./views/main.html"></include>
+        </div>
+        <include src="./shared/footer.html"></include>
         <script type="module" src="./assets/scripts/main.js"></script>
-        <form name="form_reloj">
-            <input
-                type="text"
-                name="reloj"
-                size="10"
-                style="
-                    background-color: Black;
-                    color: White;
-                    font-family: Verdana, Arial, Helvetica;
-                    font-size: 8pt;
-                    text-align: center;
-                "
-                onfocus="window.document.form_reloj.reloj.blur()"
-            />
-        </form>
     </body>
 </html>
